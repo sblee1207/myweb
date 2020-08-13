@@ -8,7 +8,7 @@ function App() {
     <div>
     <p> D-1 코딩 어려우어ㅠㅠ </p>
     <Button Primary> 도와줭!! </Button>
-    <Progress percent = {33} indicating/>
+    <Progress percent = {66} indicating/>
     </div>
   );
 }
