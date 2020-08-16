@@ -1,5 +1,5 @@
 import React from 'react';
-import {Comment, Form, Button, Header} from 'semantic-ui-react'
+import {Comment, Form, Button, Header, Icon, Grid} from 'semantic-ui-react'
 
 
 import person from "./person.png"
@@ -7,7 +7,7 @@ import person from "./person.png"
 class Comments extends React.Component{
 
   render(){
-    return(<Comment.Group>
+    return(<Comment.Group style = {{marginLeft :"180px"} }>
       <Header as='h3' dividing>
         Comments
       </Header>
@@ -32,6 +32,22 @@ class Comments extends React.Component{
         <Form.TextArea />
         <Button content='Add Reply' labelPosition='left' icon='edit' primary />
       </Form>
+      <br/>
+      <Button color='facebook'>
+        <Icon name='facebook' /> Facebook
+      </Button>
+      <Button color='instagram'>
+        <Icon name='instagram' /> Instagram
+      </Button>
+      <Button color='pinterest'>
+        <Icon name='pinterest' /> Pinterest
+      </Button>
+      <Button color='google plus'>
+        <Icon name='google' /> Gmail
+      </Button>
+      <Button color='youtube'>
+        <Icon name='youtube' /> Youtube
+      </Button>
     </Comment.Group>)
  }
 }
